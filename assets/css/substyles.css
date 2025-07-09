@@ -1,0 +1,78 @@
+/*
+  CSS RESET
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+a {
+  color: rgb(114, 154, 230);
+  text-decoration: none;
+}
+
+
+
+/* 
+CUSTOM STYLES 
+*/
+
+@font-face {
+  font-family: "Floreal";
+  src:
+    url("../fonts/Floreal-Italic.woff") format("woff"),
+    url("../fonts/Floreal-Italic.woff2") format("woff2"),
+    url("../fonts/Floreal-Regular.woff") format("woff"),
+    url("../fonts/Floreal-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "Meyrin";
+  src:
+    url("../fonts/Meyrin.woff") format("woff"),
+    url("../fonts/Meyrin.eot") format("embedded-opentype")
+}
+
+body {
+  font-family: "Floreal";
+  font-size: 32px;
+  padding: 16px 16px 16px 16px;
+}
+
+/* 
+TYPO
+*/
+
+h1 {
+  font-family: "Meyrin";
+  font-size: 64px;
+}
+
+p {
+  margin-bottom: 1.5em;       /* Abstand nach unten */
+  font-family: "Floreal";
+  font-size: 32px;
+}
+
+a.pfeil {
+  margin-left: 16px;
+  position: fixed;
+}
+
+  .link-color {
+    color: rgb(100, 100, 251);
+  }

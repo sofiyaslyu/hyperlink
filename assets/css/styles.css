@@ -1,0 +1,151 @@
+/*
+  CSS RESET
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* 
+CUSTOM STYLES 
+*/
+
+img {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  object-fit: scale-down;
+}
+
+@font-face {
+  font-family: "Meyrin";
+  src:
+    url("../fonts/Meyrin.woff") format("woff"),
+    url("../fonts/Meyrin.eot") format("embedded-opentype")
+}
+
+body {
+  font-family: "Meyrin";
+  font-size: 32px;
+}
+
+
+
+/* images */
+
+@media (575px < width <= 598px) and (5px < height <= 675px) {
+  .image01 {
+    display: block;
+  }
+}
+
+@media (598px < width <= 644px) and (5px < height <= 675px) {
+  .image02 {
+    display: block;
+  }
+} 
+
+
+@media (644px < width <= 1380px) and (680px < height <= 1000px) {
+  .image03 {
+    display: block;
+  }
+}
+
+
+
+
+
+
+/* 
+SUBPAGES
+ */
+
+/* Standardmäßig versteckt */
+
+.subpages {
+    display: none;
+}
+
+/* mobile ansicht */
+@media (0px < width <= 574px) and (0px < height <= 1440px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(114, 154, 230));
+}
+
+/* subpages zentriert und fixiert */
+.subpages {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  text-align: center;
+  font-size: 64px;
+  z-index: 1;
+}
+
+.subpages a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: none;
+  border-bottom: 1.4px solid black;
+}
+
+img.qr {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img.qr {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.6);
+  transform-origin: bottom center;
+}
+
+}
+
+
+

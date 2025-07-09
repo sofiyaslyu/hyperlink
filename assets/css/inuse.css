@@ -1,0 +1,135 @@
+/*
+  CSS RESET
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+a {
+  color: rgb(114, 154, 230);
+  text-decoration: none;
+}
+
+
+
+
+/* 
+CUSTOM STYLES 
+*/
+
+@font-face {
+  font-family: "Floreal";
+  src:
+    url("../fonts/Floreal-Italic.woff") format("woff"),
+    url("../fonts/Floreal-Italic.woff2") format("woff2"),
+    url("../fonts/Floreal-Regular.woff") format("woff"),
+    url("../fonts/Floreal-Regular.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "Meyrin";
+  src:
+    url("../fonts/Meyrin.woff") format("woff"),
+    url("../fonts/Meyrin.eot") format("embedded-opentype")
+}
+
+body {
+  font-family: "Floreal";
+  font-size: 32px;
+}
+
+a.pfeil {
+  margin-left: 16px;
+  position: fixed;
+}
+
+p {
+  margin-bottom: 1.5em;       /* Abstand nach unten */ 
+  padding: 16px 16px 16px 16px;
+  
+}
+
+h1 {
+  font-family: "Floreal";
+  font-size: 32px;
+  margin-top: 16px;
+  margin-right: 16px;
+  text-align: right;
+}
+
+
+
+/* 
+IMAGES as LINKS
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  color: black;
+  line-height: 1.2;
+  padding: 0;
+  min-height: 100vh;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (min-width: 768px) {
+  nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+nav a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  line-height: 1.1;
+  /*border: 10px solid transparent;*/
+  /*transition: border-color 0.3s ease;*/
+  padding-bottom: 48px;
+}
+
+/*
+nav a:hover,
+nav a:focus {
+  border-color: black;
+  outline: none;
+} 
+*/
+
+nav a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1vw;
+  object-fit: cover;
+} 
+
+
